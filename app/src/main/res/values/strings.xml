@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuestionApp</string>
+    <string name="login_app_name">クイズに挑戦しよう</string>
+    <string name="login_text1">計15門</string>
+    <string name="login_text2">1問から10問まで選び可能</string>
+    <string name="login_start_button">スタート</string>
+    <string name="login_name_input_hint">挑戦したい問題数を入力</string>
+    <string name="app_submit">OK</string>
+    <string name="result_text">結果</string>
+    <string name="result_button">終わり</string>
+    <string name="result_text2">あなたの成績は：</string>
+</resources>
