@@ -15,9 +15,14 @@ class ResultActivity : AppCompatActivity() {
 
         val correctCount = intent.getStringExtra(Constants.CORRECT_COUNT)
         val wrongCount = intent.getStringExtra(Constants.WRONG_COUNT)
+        val timer = intent.getStringExtra(Constants.TIMER_COUNT)
 
-        result_text2.text = "おめでとう、あなたの成績は："
-        result_count.text = "正解数${correctCount}，間違い数${wrongCount}"
+        result_text2.text = "お疲れ様、あなたの成績は："
+        if(timer == "タイムオーバーです"){
+            result_count.text = "タイムオーバーです"
+        }else{
+            result_count.text = "正解数${correctCount}，間違い数${wrongCount},トータル時間${timer}秒"
+        }
 
         result_button.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))

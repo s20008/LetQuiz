@@ -1,9 +1,5 @@
 package jp.ac.it_college.s20008.android.letquiz
 
-/**
- * @author: ffzs
- * @Date: 2020/9/10 上午10:27
- */
 
 data class Question (
     val id:Int,

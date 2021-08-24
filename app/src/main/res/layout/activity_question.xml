@@ -6,15 +6,25 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        tools:context=".QuestionActivity"
->
+        tools:context=".QuestionActivity">
+
+
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:orientation="vertical"
-            android:gravity="center"
-    >
+            android:gravity="center">
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/app_text_gray"
+            android:textSize="25sp"
+            tools:text="0:00" />
         <TextView
                 android:id="@+id/app_question"
                 android:layout_width="match_parent"
@@ -26,11 +36,10 @@
         />
 
         <ImageView
-                android:id="@+id/app_image"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-        />
+            android:id="@+id/app_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp" />
 
         <LinearLayout
                 android:id="@+id/app_progress_details"
@@ -53,15 +62,14 @@
             />
 
             <TextView
-                    android:id="@+id/app_progress"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="15dp"
-                    android:textColor="@color/app_text_color"
-                    android:textSize="14sp"
-                    tools:text="0/10"
-            />
+                android:id="@+id/app_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="@color/app_text_color"
+                android:textSize="14sp"
+                tools:text="0/15" />
 
         </LinearLayout>
 
