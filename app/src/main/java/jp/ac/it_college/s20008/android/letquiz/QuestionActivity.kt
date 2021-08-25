@@ -39,9 +39,9 @@ class QuestionActivity : AppCompatActivity() , View.OnClickListener{
 
         override fun onFinish() {
             binding.timerText.text = "0:00"
-            gameover()
 
         }
+
     }
 
 
@@ -64,14 +64,6 @@ class QuestionActivity : AppCompatActivity() , View.OnClickListener{
         timer.start()
 
     }
-    private fun gameover(){
-        timerCount = "タイムオーバーです"
-        val intent = Intent(this@QuestionActivity, ResultActivity::class.java)
-        intent.putExtra(Constants.TIMER_COUNT,timerCount)
-        startActivity(intent)
-        finish()
-        return
-    }
 
 
     @SuppressLint("SetTextI18n")
@@ -87,7 +79,7 @@ class QuestionActivity : AppCompatActivity() , View.OnClickListener{
             val intent = Intent(this@QuestionActivity, ResultActivity::class.java)
             intent.putExtra(Constants.CORRECT_COUNT, correctCount.toString())
             intent.putExtra(Constants.WRONG_COUNT, (mQuestionList!!.size-correctCount).toString())
-            intent.putExtra(Constants.QUESTION_COUNT, questionCount)
+            intent.putExtra(Constants.QUESTION_COUNT, mQuestionList!!.size.toString())
             intent.putExtra(Constants.TIMER_COUNT,timerCount)
             startActivity(intent)
             finish()
