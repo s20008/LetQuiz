@@ -95,8 +95,12 @@ class QuestionActivity : AppCompatActivity() , View.OnClickListener{
         binding.appProgressBar.max = mQuestionList!!.size
         binding.appProgress.text = "$mCurrentPosition/${mQuestionList!!.size}"
 
-        //设置问题
-        binding.appImage.setImageResource(question.image)
+        //设置
+        if(question.image != null){
+            binding.appImage.setImageResource(question.image)
+        }else{
+            binding.appImage.setImageResource(0)
+        }
         binding.appQuestion.text = question.question
         listOf(question.option1, question.option2, question.option3, question.option4)
             .forEachIndexed { i, value -> options[i].text = value }

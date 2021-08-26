@@ -54,9 +54,45 @@ object Constants {
             10, "チェスにおいて、次に動かせる駒が無く、ゲームが継続できずに「引き分け」になることを何という？",
             R.drawable.s20008_chessman, "プロモーション", "チェックメイト", "ステイルメイト", "キャスリング", 3
         )
+        val que11 = Question(
+            11,"公務員はどれ？",null,"お笑い芸人","消防士","YouTuber","建築士",2
+        )
+        val que12 = Question(
+            12,"お酒を飲めるようになる歳は？",null,"２０歳","２１歳","２２歳","２３歳",1
+        )
+        val que13 = Question(
+            13,"侍JAPANの監督は誰？",null,"稲葉監督","原監督","大桝監督","大谷監督",1
+        )
+        val que14 = Question(
+            14,"原作のサザエさんの未来予想図では、タラちゃんに妹がいます。名前は何でしょう",null,
+            "ホタテちゃん","ヒトデちゃん","アワビちゃん","アサリちゃん",2
+        )
+        val que15 = Question(
+            15,"ある音楽が頭にこびりついて離れなく現象をなんという？",null,"イヤーワーム",
+            "イヤースティック","イヤーフルート","イヤーループ",1
+        )
+        val que16 = Question(
+            16,"三角形の内角の和は？",null,"180","360","540","どれでもない",1
+        )
+        val que17 = Question(
+            17,"悪事を隠して知らないフリをするようすを「ねこばば」というが「ばば」とはどういう意味が",null,
+            "ババ抜き","おばさん","悪魔","うんこ",4
+        )
+        val que18 = Question(
+            18,"今通ってる学校は？",null,"ITカレッジ沖縄","ITカレッジ横浜","ITカレッジ神奈川","ITカレッジ大きな輪",
+            1
+        )
+        val que19 = Question(
+            19,"平良かいま選手の出身高校は？",null,"八重山商工","宮古高校","那覇高校","沖縄尚学",
+            1
+        )
+        val que20 = Question(
+            20,"ゲームAPEXでバンガーロールのセリフ、「私は◯◯よ」〇〇に入る言葉はどれか",null,
+            "アフロ","カービン","大砲","戦車",3
+        )
 
         questions.addAll(
-            listOf(que1, que2, que3, que4, que5, que6, que7, que8, que9, que10)
+            listOf(que1, que2, que3, que4, que5, que6, que7, que8, que9, que10,que11,que12,que13,que14,que15,que16,que17,que18,que19,que20)
         )
 
         questions.shuffle()
