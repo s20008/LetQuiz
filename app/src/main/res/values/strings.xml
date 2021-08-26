@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">LetQuiz</string>
     <string name="login_app_name">Let\'s Quiz</string>
-    <string name="login_text1">計10問</string>
-    <string name="login_text2">1問から10問まで選び可能</string>
+    <string name="login_text1">計20問</string>
+    <string name="login_text2">1問から20問まで選び可能</string>
     <string name="login_start_button">スタート</string>
     <string name="login_name_input_hint">挑戦したい問題数を入力</string>
     <string name="app_submit">OK</string>
